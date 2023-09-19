@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artık Sinema</title> <!--Tarayıcı başlığı-->
+
+    <!--XXX-->
+    <link rel="stylesheet" href="css/index.css"> <!--HTML ve CSS birleştirir-->
+    <script src="https://kit.fontawesome.com/401345fc1a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+      
+
+    </head>
+<body>
+
+    
+<!--Header Section-->
+<header id="header" class="header">
+
+    <img class="gps-icon" src="/images/artik.png" width="160" height="90" alt="logo">
+
+    <h1 id="header" style="text-align: center;"> Artık Sinema </h1>
+
+    <div>
+        <button class="okurol btn1 btn-red"> Okur Ol </button>
+        <button class="GirisYap btn1 btn-red"> Giriş Yap </button>
+    </div>
+
+</header>
+ 
+ <!-- Main Container -->
+ <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+        <h2>Artık Hikayeler</h2>
+        <!-- Content for the left section -->
+    </div>
+    <!-- Right Section -->
+    <div class="right">
+        <h2>Artık Filmler</h2>
+        <!-- Content for the left section -->
+    </div>
+</div>
+
+<div class="kapsayici">
+    <h1>Artık Hikayeler</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="/images/Aristo.png" alt="Aristo">
+            <h3>Aristo</h3>
+            <p>Bir Aristo, Aaa-ris-to mudur masalı.</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+        <div class="card">
+            <img src="/images/Keloglan.png" alt="Keloglan">
+            <h3>Keloğlan</h3>
+            <p>Bir Keloğlan, kel oğlan mıdır masalı</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+        <div class="card">
+            <img src="/images/Sitiv (1).png" alt="sitiv">
+            <h3>Sitiv</h3>
+            <p>Bir bilim adamının hayatından esinlenilmiştir.</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+    </div>
+    
+</div>
+
+<div class="kapsayici">
+    <h1>Artık Filmler</h1>
+    <div class="cards">
+        <div class="card">
+            <img src="/images/themachinist.png" alt="themachinist">
+            <h3>The Machinist</h3>
+            <p>2004 yapımı psikolojik gerilim filmi</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+        <div class="card">
+            <img src="/images/dunkirk.png" alt="dunkirk">
+            <h3>Dunkirk</h3>
+            <p>Bir kurtarma operasyonunun dramatik hikayesi</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+        <div class="card">
+            <img src="/images/goodomens.png" alt="goodomens">
+            <h3>Good Omens</h3>
+            <p>Fantastik komedi türündeki bir romandan uyarlama</p>
+            <button class="btn1 btn-red">Oku</button>
+        </div>
+    </div>
+    
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footerInput">
+            <input type="text" placeholder="Mektubunu İlet">
+        </div>
+       
+    </div>
+    <div class="footer-clock align-right">
+        <span id="clock"></span>
+        <span class="date-space"> </span>
+        <span id="date"></span>
+    </div>
+    <div class="footer-links">
+        <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Kütüphane</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </div>
+  </footer>
+
+  <!--Saat-->
+  <style>
+    .date-space {
+        margin-left: 10px;
+    }
+    #clock{
+      padding: 5px;
+      border-radius: 7px;
+      border: 2px solid white;
+  }
+  #date{
+      border-radius: 7px;
+      padding: 5px;
+      border: 2px solid white;
+  }
+  </style>
+  
+  <script>
+    function updateClockAndDate() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        const date = `${now.getDate()}.${now.getMonth() + 1}.${now.getFullYear()}`;
+        
+        const clockElement = document.getElementById('clock');
+        clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        
+        const dateElement = document.getElementById('date');
+        dateElement.textContent = date;
+    }
+  
+    // Initial call to update the clock and date
+    updateClockAndDate();
+  
+    // Update the clock and date every second
+    setInterval(updateClockAndDate, 1000);
+  </script>
+  
+  
+
+<!--Dark Mode-->
+<script src="<link rel="stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '32px', // default: '32px'
+                right: '32px', // default: '32px'
+                left: 'unset', // default: 'unset'
+                time: '1s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+
+    </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" 
+integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>

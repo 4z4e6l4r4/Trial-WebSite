@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Artık Hikaye Podcast</title>
+    <link rel="stylesheet" href="style.css">
+
+<!--TARİH START-->
+    <style>
+        .datetime-container {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .date {
+            color: #2C172C;
+        }
+
+        .time {
+            color: #30133E;
+        }
+    </style>
+<!--TARİH END-->
+</head>
+
+<body>
+    <!--Header start-->
+    <header class="header">
+        <a href="#" class="logo"> <!--Logo-->
+            <img src="/pictures/artık png.png" alt="logo">
+        </a>
+
+        <nav class="navbar"> <!--Navbar kısmı-->
+            <h1>Artık Hikaye</h1>
+            <!--<a href="#"></a>-->
+
+        </nav>
+
+        <div class="buttons"> <!--Butonlar-->
+            <button>
+                <i class="fa-solid fa-book fa-2xl"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-headphones fa-2xl"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-user fa-fade fa-2xl"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-bars fa-2xl"></i>
+            </button>
+
+        </div>
+    </header>
+    <!--Header end-->
+
+    <!--Main Page start-->
+    <section class="mainpage">
+
+        <div class="content">
+            <h2> Artık Hikaye </h2>
+            <h3>Artık Podcast</h3>
+            <a href="#" class="btn">Dinle</a>
+        </div>
+
+<!--TARİH START-->
+  <div class="datetime-container">
+        <div class="date" id="date"></div>
+        <div class="time" id="time"></div>
+    </div>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const dateElement = document.getElementById("date");
+            const timeElement = document.getElementById("time");
+    
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString(undefined, options);
+            const formattedTime = now.toLocaleTimeString();
+    
+            dateElement.textContent = formattedDate;
+            timeElement.textContent = formattedTime;
+        }
+    
+        // Update date and time every second
+        setInterval(updateDateTime, 1000);
+    
+        // Initial call to update when the page loads
+        updateDateTime();
+    
+        // Move datetime container to the top right corner
+        const datetimeContainer = document.getElementById("datetimeContainer");
+        datetimeContainer.style.position = "fixed";
+        datetimeContainer.style.top = "50px";
+        datetimeContainer.style.right = "50px";
+    </script>
+    
+<!--TARİH END-->
+
+
+    </section>
+    <!--Main Page end-->
+
+
+    <!--Library start-->
+    <section class="mainpage">
+<h3>Kütüp<span>Hane</span></h3>
+
+    </section>
+    <!--Library ens-->
+
+
+    
+</body>
+
+</html>

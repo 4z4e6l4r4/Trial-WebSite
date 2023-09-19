@@ -1,0 +1,290 @@
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #99617B;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+   
+    box-shadow: 0 2px 4px #30133E;
+}
+
+body{
+    background-color: #30133E;
+}
+
+
+.ekran .box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+gap: 5rem;
+}
+
+.ekran .box-container .box img{
+width: 50%;
+object-fit: cover;
+}
+
+
+.section {
+    padding: 15rem 17%;
+    padding-top: 15rem;
+    padding-right: 17%;
+    padding-bottom: 15rem;
+    padding-left: 17%;
+}
+
+.okurol {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.GirisYap {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn1 {
+    border: 1px solid #30133E;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #30133E;
+    border-right-color: #30133E;
+    border-bottom-color: #30133E;
+    border-left-color: #30133E;
+    border-image-source: hidden;
+    border-image-slice: hidden;
+    border-image-width: hidden;
+    border-image-outset: hidden;
+    border-image-repeat: hidden;
+    padding: 10px 20px;
+    border-radius: 55px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn-red {
+    background-color: #ffe0e0;
+    transition: background-color 0.3s ease, transform 0.3s ease 0s;
+    cursor: pointer;
+    transform: translateY(10px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #30133E;
+}
+
+.btn-red:hover {
+    background-color:#30133ea4; /* Düğmeye gelindiğinde arka plan rengini değiştiriyoruz */
+    transform: translateY(0); /* Hareketi sıfıra çekerek yatay pozisyonunu sıfırlıyoruz */
+    box-shadow: 0 5px 15px #30133E;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #99617b77;
+border-bottom-left-radius: 190px;
+border-bottom-right-radius: 190px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 80px;
+    justify-content: space-between;
+    
+}
+
+.left {
+    min-width:600px;
+    max-height: 500px;
+   
+    box-shadow: 2px 2px 10px 0.3px  #30133E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8bcdd8e;
+    border-radius: 180px;
+    transition: transform 0.3s ease;
+}
+
+.left:hover {
+    transform: scale(1.1); /* Resimlere hover durumunda büyütme etkisi ekliyoruz */
+}
+
+.right {
+    min-width: 600px;
+    max-height: 500px;
+    background-color: #99617b91;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 180px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px 0.3px  #30133E;
+}
+
+.right:hover {
+    transform: scale(1.1); /* Resimlere hover durumunda büyütme etkisi ekliyoruz */
+}
+
+
+.kapsayici {
+    text-align: center;
+    padding: 20px;
+    margin: 0 200px 0 200px;
+}
+
+.kapsayici h1 {
+    margin-bottom: 50px;
+    margin-top: 100px;
+    transition: transform 0.3s ease;
+}
+.kapsayici h1:hover{
+
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    
+    max-width: 400px;
+    min-height: 500px;
+    padding: 20px;
+    border: 3px solid #30133E;
+    margin: 0 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition efektleri eklendi */
+    box-shadow: 0 0 10px #483e59
+    
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Hareket ettirme efekti */
+    box-shadow: 0 10px 20px #483e59; /* Box shadow değeri hover durumunda değişiyor */
+}
+
+.card img {
+    max-width: 100%; /* Resmin en fazla yüzde 100 genişliğinde olmasını sağlar */
+    max-height: 255px;
+    object-fit: cover; 
+
+    box-shadow: 0 0 10px 0.3px  #30133E;
+
+  border-radius: 40px;
+    transition: transform 0.3s ease; /* Resimlere transition ekliyoruz */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Resimlere hover durumunda büyütme etkisi ekliyoruz */
+}
+
+
+.footer {
+    background-color: #483e59;
+    color: #d8bcdd;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+.footer-links  {
+    text-align: center;
+}
+.footer-links ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #d8bcdd;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+ 
+}
+
+
+
+/* Adjust the alignment of the clock */
+.align-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+ 
+
+}
+
+
+
+.align-right  span{
+    font-size: 19px;
+
+}
+
+.footerInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; 
+}
+.footerInput:hover{
+    transform: scale(1.1); /* Resimlere hover durumunda büyütme etkisi ekliyoruz */
+}
+
+.footerInput input {
+    padding: 10px;
+    width: 500px;
+    border-radius: 80px; /* Buradaki değeri istediğiniz gibi ayarlayabilirsiniz */
+    text-align: center;
+    
+}
+
+

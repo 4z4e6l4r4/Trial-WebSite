@@ -1,0 +1,165 @@
+/*HATALAR:
+- Scroll bar gözükmüyor
+- headerı transparant yapınca üstündeki ögelerde transparant oluyor
+- body height çalışmıyor 
+- sectionı uzatamıyorum
+*/
+
+</style>:root {
+    /*css değişkenleri için*/
+    --main-color: #E5B6BA;
+    --dark-color: #2C172C;
+    --bordor: 0.1rem solid #30133E;
+
+}
+
+/*Scroll bar*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #99617B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2C172C;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 30px 0 #99617B;
+}
+
+* {
+    /*tüm sayfa*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+}
+
+html {
+    /*html için*/
+    font-size: 74.9%;
+    overflow: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E5B6BA;
+    min-height: 400vh;
+}
+
+section {
+    padding: 3.5rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 1.7rem;
+    border-radius: 30rem;
+    font-size: 1.4rem;
+    color: #2C172C;
+    background-color: #E5B6BA;
+    cursor: pointer;
+    box-shadow: 0 0 30px 0 #2C172C;
+    border-color: #2C172C;
+    border: none;
+
+}
+
+
+/*HEADER START*/
+.logo img {
+    /*logo*/
+    height: 7rem;
+}
+
+.header .logo img {
+    /*logo*/
+    height: 6rem;
+}
+
+.header {
+    /*Header*/
+    background-color: #f8eff1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px #2C172C;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    opacity: 0.9;
+}
+
+.header .navbar h1 {
+    /*H1 için*/
+    margin: 0 1rem;
+    font-size: 3.4rem;
+    color: #2C172C;
+    border-bottom: 0.2rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar h1:hover {
+    border-color: #2C172C;
+    padding-bottom: 0.5rem;
+    opacity: 0.3;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    background-color: transparent;
+}
+
+/*HEADER END*/
+
+
+
+
+/*MAINPAGE START*/
+.mainpage {
+    min-height: 75rem;
+    display: flex;
+    background: url(/pictures/6d69b207c5e2bdca84c24b12729096de.gif) no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -14.5rem;
+    align-items: center;
+}
+
+.mainpage .content {
+    max-height: 60rem;
+
+}
+
+.mainpage .content h2 {
+    font-size: 6rem;
+    color: #2C172C;
+    padding: 1rem 0;
+    position: static;
+}
+
+.mainpage .content h3 {
+    font-size: 3rem;
+    color: #30133E;
+    padding: 1rem 0;
+    position: static;
+}
+
+
+/*MAINPAGE END*/

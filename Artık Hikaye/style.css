@@ -1,0 +1,185 @@
+.header {
+    font-size: 28px;
+    font-weight: bold;
+    color: #99617B;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px #30133E;
+}
+
+
+.ekran .box-container{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr) );
+gap: 5rem;
+}
+
+.ekran .box-container .box img{
+width: 50%;
+object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.section {
+    padding: 15rem 17%;
+    padding-top: 15rem;
+    padding-right: 17%;
+    padding-bottom: 15rem;
+    padding-left: 17%;
+}
+
+.okurol {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.GirisYap {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    border: 1px solid #30133E;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #30133E;
+    border-right-color: #30133E;
+    border-bottom-color: #30133E;
+    border-left-color: #30133E;
+    border-image-source: hidden;
+    border-image-slice: hidden;
+    border-image-width: hidden;
+    border-image-outset: hidden;
+    border-image-repeat: hidden;
+    padding: 10px 20px;
+    border-radius: 55px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn-red {
+    background-color: #ffe0e0;
+    transition: background-color 1s ease, transform 1s ease;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: transform: 10px;
+}
+
+.main {
+    display: block;
+}
+
+#banner {
+    display: flex;
+    height: 100vh;
+}
+
+.banner-content {
+    margin-top: 20vw;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 30vh;
+/*dikkat*/
+    padding-top: 30dvh;
+    padding-bottom: 30dvh;
+}
+
+.title1 {
+
+    color: #30133E;
+    font-size: 40px;
+    font-weight: 100;
+    font-weight: bold;
+    margin-right: 10vw;
+}
+.title2 {
+
+    color: #30133E;
+    font-size: 40px;
+    font-weight: 100;
+    font-weight: bold;
+    margin-left: 10vw;
+}
+
+.arkakutu{
+    background-image:  url("https://i.pinimg.com/564x/8c/8e/5d/8c8e5d2440dd5f74c61e7d70da2ae79c.jpg"); /* Kullanılacak Görsel */
+    background-color: tomato; /* Görsel Çalışmassa Arkaplan Rengi */
+    background-position: center; /* Görseli Ortala */
+    background-repeat: no-repeat; /* Resmi tekrarlama */
+    background-size: cover; /* resmi ekranı kaplayacak hale getir. */
+    box-shadow: 0 2px 4px #30133E;
+}
+
+
+
+
+
+
+/*
+ margin-bottom: 20px;
+ text-align: center;
+display: flex;
+
+position: fixed;
+    top: 50;
+    left: 0;
+    right: 500;
+    z-index: 1000;
+    */
+
+
+
+.button {
+    appearance: auto;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-variant-alternates: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    font-optical-sizing: ;
+    font-kerning: ;
+    font-feature-settings: ;
+    font-variation-settings: ;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+}
